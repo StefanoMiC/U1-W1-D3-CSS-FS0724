@@ -5,17 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Intro</title>
+
+    <!-- stile incorporato -->
+    <style>
+        p {
+            font-size: 20px;
+        }
+    </style>
+
+    <!-- stile con foglio css esterno -->
+    <!-- in questo modo potremmo riutilizzare le stesse definizioni anche su un'altra pagina html senza doverle ricopiare 
+      (non si incrementa il peso del codice) -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- anche l'ordine col quale importiamo o utilizziamo gli stili ha un effetto sul risultato finale:
+     le definizioni che compariranno più in basso sia nel css che nel tag head avranno priorità -->
+
 </head>
 
 <body>
-    <h1>Oggi impariamo a gestire e applicare gli stili nelle nostre pagine</h1>
-    <p>Abbiamo tre metodi per applicare gli stili ad una pagina</p>
+    <header class="big-and-bold">
+        <img src="./assets/imgs/logo.svg" alt="logo epicode">
+        <nav>
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- id sovrascrive le regole della classe -->
+        <h1 id="main-title" class="title">Oggi impariamo a gestire e applicare gli stili nelle nostre pagine</h1>
+        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, assumenda.</h2>
+        <p class="big-and-bold">Abbiamo tre metodi per applicare gli <a href="#">stili</a> ad una pagina</p>
 
-    <ul>
-        <li>elemento1</li>
-        <li>elemento2</li>
-        <li>elemento3</li>
-    </ul>
+        <ol>
+            <li style="color: orangered">Stile inline</li>
+            <li>Stile incorporato</li>
+            <li>Stile con foglio CSS esterno</li>
+        </ol>
+
+        <p class="big-and-bold">Lorem ipsum, dolor sit amet consectetur<a href="#"> adipisicing elit.</a> Recusandae
+            nihil expedita ullam,
+            perspiciatis illo
+            dolorum placeat fugit culpa eaque officia laborum unde explicabo exercitationem architecto itaque omnis
+            tempora at quos.
+        </p>
+    </main>
 </body>
 
 </html>
