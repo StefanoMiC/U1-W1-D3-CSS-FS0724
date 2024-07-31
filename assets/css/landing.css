@@ -1,0 +1,53 @@
+/* metodo nr.2 per importare font da google (vengono entrambi forniti da google) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(16, 16, 16);
+}
+
+header nav,
+header nav ol li {
+  display: inline-block;
+}
+
+header nav,
+header img {
+  vertical-align: middle;
+}
+
+header nav ol li a {
+  color: white;
+}
+
+section div {
+  text-align: center;
+}
+
+section i {
+  font-size: 40px;
+  color: blue;
+}
+
+/* classe generica applicata a tutti gli elementi uguali */
+.box {
+  width: 33.333%;
+  height: 470px;
+  display: inline-block;
+  margin-right: -5px;
+}
+
+/* classi di "modificazione" più specifiche che definiscono qualcosa di diverso per i singoli elementi */
+.box-1 {
+  background-color: palevioletred;
+}
+.box-2 {
+  background-color: palegreen;
+}
+.box-3 {
+  background-color: paleturquoise;
+}
